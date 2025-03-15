@@ -1,0 +1,28 @@
+[project]
+name = "txt"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.105.0",
+    "docling>=2.26.0",
+    "google-generativeai>=0.8.4",
+]
+
+[project.scripts]
+txt = "txt:main"
+pd = "txt.pdf:main"
+tx = "txt.txt1:main"
+cs = "txt.csv:main"
+ex = "txt.excel:main"
+js = "txt.json:main"
+spe ="txt.specs:main"
+api ="txt.ap:main"
+
+
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
